@@ -1,0 +1,1128 @@
+{
+	"info": {
+		"_postman_id": "6fe445a2-d6c5-4706-a5e7-9c50edd41305",
+		"name": "Adobe IO APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Programs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/programs",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"programs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Program",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Repositories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/repositories",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"repositories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Repository",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/repository/{{repositoryId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"repository",
+						"{{repositoryId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Branches",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/repository/{{repositoryId}}/branches",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"repository",
+						"{{repositoryId}}",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Pipelines",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipelines",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipelines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pipeline",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pipeline",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalidate Cache",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/cache",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Pipeline Execution",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start the Pipeline",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pipelineExecutionMode\": \"NORMAL\"\n}"
+				},
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start pipeline execution",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start step state",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}/phase/{{phaseId}}/step/{{stepId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}",
+						"phase",
+						"{{phaseId}}",
+						"step",
+						"{{stepId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Advance pipeline execution step",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}/phase/{{phaseId}}/step/{{stepId}}/advance",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}",
+						"phase",
+						"{{phaseId}}",
+						"step",
+						"{{stepId}}",
+						"advance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel pipeline execution step Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}/phase/{{phaseId}}/step/{{stepId}}/cancel",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}",
+						"phase",
+						"{{phaseId}}",
+						"step",
+						"{{stepId}}",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pipeline step logs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}/phase/{{phaseId}}/step/{{stepId}}/logs?file=error",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}",
+						"phase",
+						"{{phaseId}}",
+						"step",
+						"{{stepId}}",
+						"logs"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "error"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pipeline step metrics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/execution/{{executionId}}/phase/{{phaseId}}/step/{{stepId}}/metrics",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"execution",
+						"{{executionId}}",
+						"phase",
+						"{{phaseId}}",
+						"step",
+						"{{stepId}}",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List executions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/executions",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"executions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List environments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments?type=dev",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "dev"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Environment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"acme-dev1\",\n    \"type\": \"dev\",\n    \"region\": \"va7\",\n    \"description\": \"This is our primary development environment\"\n}"
+				},
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Environment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Environment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Environment Logs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}/logs?service=author&name=aemerror &days=2",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}",
+						"logs"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "author"
+						},
+						{
+							"key": "name",
+							"value": "aemerror "
+						},
+						{
+							"key": "days",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download environment logs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}/logs/download?service=author&name=aemerror &days=2",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}",
+						"logs",
+						"download"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "author"
+						},
+						{
+							"key": "name",
+							"value": "aemerror "
+						},
+						{
+							"key": "days",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List User Environment Variables",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}/variables",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch User Environment Variables",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"MY_VAR1\",\n        \"value\": \"myValue\",\n        \"type\": \"string\",\n        \"service\": \"author\"\n    }\n]"
+				},
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/environments/{{environmentId}}/variables",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"environments",
+						"{{environmentId}}",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List User Pipeline Variables",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/variables",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch User Pipeline Variables",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{x-gw-ims-org-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"MY_VAR1\",\n        \"value\": \"myValue\",\n        \"type\": \"string\",\n        \"service\": \"author\"\n    }\n]"
+				},
+				"url": {
+					"raw": "{{cloud-api-url}}/api/program/{{programId}}/pipeline/{{pipelineId}}/variables",
+					"host": [
+						"{{cloud-api-url}}"
+					],
+					"path": [
+						"api",
+						"program",
+						"{{programId}}",
+						"pipeline",
+						"{{pipelineId}}",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "x-gw-ims-org-id",
+			"value": "<org id>",
+			"type": "string"
+		},
+		{
+			"key": "x-api-key",
+			"value": "<api key>",
+			"type": "string"
+		},
+		{
+			"key": "cloud-api-url",
+			"value": "https://cloudmanager.adobe.io",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "auth token>",
+			"type": "string"
+		},
+		{
+			"key": "programId",
+			"value": "23958",
+			"type": "string"
+		},
+		{
+			"key": "repositoryId",
+			"value": "23408",
+			"type": "string"
+		},
+		{
+			"key": "pipelineId",
+			"value": "6701013",
+			"type": "string"
+		},
+		{
+			"key": "executionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "phaseId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "stepId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "environmentId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
