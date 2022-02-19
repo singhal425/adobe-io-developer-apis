@@ -1086,7 +1086,7 @@
 		},
 		{
 			"key": "token",
-			"value": "auth token>",
+			"value": "<auth token>",
 			"type": "string"
 		},
 		{
