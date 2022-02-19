@@ -14,3 +14,6 @@ Steps:
 
 
 Collection can directly be imported via GitHub repo as well. 
+
+
+Reference: https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/
